@@ -1,0 +1,85 @@
+html {
+  font-family: 'Spectral SC', cursive;
+  height: 100%
+}
+
+p, body {
+  margin: 0;
+}
+
+body {
+  height: 100%;
+}
+
+.panels {
+  display: flex;
+  flex: 1 1 auto;
+  height: 100%;
+}
+
+.panel {
+  font-size: 48px;
+  color: white;
+  font-weight: 800;
+  text-shadow: 0 0 8px black;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  flex: 1 1 50%;
+
+  background-position: center;
+  background-size: cover;
+
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+
+  cursor: pointer;
+}
+
+.panel > *:first-child {
+  transform: translateY(-700%);
+  transition: all 0.5s ease-in-out;
+  font-size: 24px;
+}
+
+.panel.open {
+  flex: 2 0 50%;
+}
+
+
+.panel.open-active > *:first-child {
+  transform: translateY(0%);
+  
+}
+
+.panel > *:last-child {
+  transform: translateY(700%);
+  transition: all 0.5s ease-in-out;
+  font-size: 24px;
+}
+
+.panel.open-active> *:last-child {
+  transform: translateY(0);
+}
+
+.panel1 {
+  background-image: url('../assets/leopard.jpg');
+}
+
+.panel2 {
+  background-image: url('../assets/cello.jpg');
+}
+
+.panel3 {
+  background-image: url('../assets/chess.jpg');
+}
+
+.panel4 {
+  background-image: url('../assets/christmas.jpg');
+}
+
+.panel5 {
+  background-image: url('../assets/trees.jpg');
+}
